@@ -24,7 +24,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex flex-col justify-center lg:flex-row py-3 px-16 lg:px-32  items-center">
+    <header className="flex flex-col justify-center lg:flex-row py-3 px-4 lg:px-32  items-center">
       <div className="flex justify-between w-full  items-center lg:hidden">
         <Link href={"/"} className="cursor-pointer">
           <img

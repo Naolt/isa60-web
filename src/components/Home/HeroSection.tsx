@@ -32,7 +32,7 @@ export default function Hero() {
           <h1 className="text-white text-4xl md:text-6xl max-w-[721px] text-center font-bold capitalize">
             Men Of Honor And Women Of Dignity
           </h1>
-          <p className="text-white text-xl">
+          <p className="text-white text-xl text-center">
             Discover inspiring stories and the impact of ISA60
           </p>
           <div className="mt-6">
