@@ -11,20 +11,10 @@ export default function NewHero() {
         <img
           src="/assets/family.jpg"
           alt="family photo"
-          className="object-contain object-top mx-auto  h-[90vh]"
+          className="object-contain object-top mx-auto "
         />
       </div>
-      {/*<div className="w-full absolute inset-0 h-screen">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
-      </div>*/}
+
       <div className="w-full h-full ">
         <div className="flex flex-col items-center justify-center h-full gap-6 p-16">
           <h1 className="text-gray-900 text-2xl md:text-4xl max-w-[721px] text-center font-bold uppercase">
