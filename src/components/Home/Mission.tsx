@@ -67,7 +67,7 @@ function Mission() {
             </h1>
             <p className="text-gray-800">
               We hold Christ at the center of everything we do. We believe in
-              empowering individuals to "arise and shine" through
+              empowering individuals to &quot;arise and shine&quot; through
               Christ-centered lives fueled by love, grace, integrity, and
               respect.
             </p>

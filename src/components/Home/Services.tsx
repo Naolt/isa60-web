@@ -36,10 +36,10 @@ function Services() {
             Empowering
           </span>
           <p className="text-center text-gray-900">
-            ISA60's core service is equipping individuals to become Men of Honor
-            (MoH) and Women of Dignity (WoD) through Christ-centered training
-            programs. These programs focus on personal transformation, fostering
-            values like love, integrity, and respect.
+            ISA60&apos;s core service is equipping individuals to become Men of
+            Honor (MoH) and Women of Dignity (WoD) through Christ-centered
+            training programs. These programs focus on personal transformation,
+            fostering values like love, integrity, and respect.
           </p>
         </div>
         {/*  service 2 */}
@@ -56,7 +56,7 @@ function Services() {
         <div className="w-[295px] h-[438px] flex flex-col p-8 items-center gap-10 bg-gray-300">
           <span className="text-2xl font-bold">Building</span>
           <p className="text-center text-gray-900">
-            ISA60's vision extends beyond individuals and churches. They
+            ISA60&apos;s vision extends beyond individuals and churches. They
             understand the importance of fostering strong, thriving communities.
             Through various initiatives and partnerships, they work to address
             community needs and promote positive social values.

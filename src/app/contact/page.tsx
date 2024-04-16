@@ -18,8 +18,8 @@ export default function ContactPage() {
           </h1>
           <p className="text-gray-700">
             Get in Touch! Do you have a question, want to volunteer, or have a
-            project that aligns with our mission? Reach out and let's start a
-            conversation.
+            project that aligns with our mission? Reach out and let&apos;s start
+            a conversation.
           </p>
           <h2 className="font-medium text-2xl">About information</h2>
           {/* about information */}
