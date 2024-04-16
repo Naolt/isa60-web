@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="w-full h-full z-20 absolute top-0 left-0 bg-black/[0.7]">
         <div className="flex flex-col items-center justify-center h-full gap-6">
           <span className="text-lg text-white uppercase w-fit flex flex-col items-center">
-            Every life matters
+            Arise & Shine
             <span className="h-1 w-3/4 bg-blue-500"></span>
           </span>
           <h1 className="text-white text-4xl md:text-6xl max-w-[721px] text-center font-bold capitalize">

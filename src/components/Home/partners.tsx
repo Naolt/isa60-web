@@ -24,7 +24,7 @@ function Partners() {
           <img
             src="/assets/partners/logoselfound.webp"
             alt="Partner photo"
-            className="w-64 grayscale hover:grayscale-0 transition duration-500 ease-in-out transform hover:scale-110 cursor-pointer"
+            className="w-64 grayscale hover:grayscale-0 transition duration-500 ease-in-out transform hover:scale-105 cursor-pointer"
           />
         </Link>
       </div>

@@ -15,8 +15,8 @@ export default function Footer() {
         <div className="flex-1 flex flex-col gap-2 items-center sm:items-start">
           <img src="/assets/logo.jpg" alt="Logo" className="w-52 h-16" />
           <p className="text-center sm:text-start">
-            is a non-profit organization licensed by the Ethiopian Government-
-            Ministry of Peace in 2007G.C.
+            is a non-profit organization licensed by the Ethiopian Council
+            office in 2007G.C.
           </p>
           <div className="flex gap-3">
             <IconBrandFacebookFilled className="text-primary" />
@@ -43,6 +43,9 @@ export default function Footer() {
             <p className="text-center sm:text-start">
               {" "}
               +251911746538 / +251912466019
+            </p>
+            <p className="text-center sm:text-start">
+              thomasisatpeace@gmail.com
             </p>
             <p className="text-center sm:text-start">
               isa60intethiomin@gmail.com

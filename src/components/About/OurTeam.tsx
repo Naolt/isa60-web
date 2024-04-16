@@ -19,19 +19,19 @@ function OurTeam() {
             </h1>
             <div className="flex flex-wrap gap-24 justify-center">
               <Member
-                name="Jessica Hedman"
-                role="CEO"
-                img="/assets/LeaderShip/jessica.jpg"
+                name="Dr. Andreas Andersson"
+                role="President"
+                img="/assets/LeaderShip/andreas.jpg"
               />
               <Member
-                name="Dr. Thomas Melesse"
-                role="Chairman"
+                name="Dr. Thomas Melesse (PhD)"
+                role="National Director"
                 img="/assets/LeaderShip/tomas.jpg"
               />
               <Member
-                name="Dr. Thomas Melesse"
-                role="Chairman"
-                img="/assets/LeaderShip/andreas.jpg"
+                name="Enat Esatu"
+                role="National Director Assistant"
+                img="/assets/LeaderShip/enat.jpg"
               />
             </div>
           </div>
@@ -43,19 +43,29 @@ function OurTeam() {
             </h1>
             <div className="flex flex-wrap gap-24 justify-center">
               <Member
-                name="Dr. Thomas Melesse"
-                role="Chairman"
-                img="/assets/LeaderShip/andreas.jpg"
-              />
-              <Member
                 name="Zeleke Degele"
                 role="Board Director"
                 img="/assets/Board/zeleke1.jpg"
               />
               <Member
                 name="Jessica Hedman"
-                role="CEO"
+                role="CEO of Elnet"
                 img="/assets/LeaderShip/jessica.jpg"
+              />
+              <Member
+                name="Dr. Rahel Jigi"
+                role="Board Member"
+                img="/assets/Board/rahel.jpg"
+              />
+              <Member
+                name="Lensa Gudina"
+                role="Board Member"
+                img="/assets/Board/lensa.jpg"
+              />
+              <Member
+                name="Martha Biratu"
+                role="Board Member"
+                img="/assets/Board/martha.jpg"
               />
             </div>
           </div>
@@ -65,11 +75,6 @@ function OurTeam() {
               Volunteers
             </h1>
             <div className="flex flex-wrap gap-24 justify-center">
-              <Member
-                name="Eng. Gizachew Desalegn"
-                role=""
-                img="/assets/Volunteers/Eng. Gizachew Desalegn.jpg"
-              />
               <Member
                 name="Pastor Elias Paulos"
                 role=""
@@ -89,6 +94,11 @@ function OurTeam() {
                 name="Sirag Ahimed"
                 role=""
                 img="/assets/Volunteers/Sirag Ahimed.jpg"
+              />
+              <Member
+                name="Eng. Gizachew Desalegn"
+                role=""
+                img="/assets/Volunteers/Eng. Gizachew Desalegn.jpg"
               />
               <Member
                 name="Tsegaye Befekadu"

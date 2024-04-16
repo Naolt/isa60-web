@@ -4,11 +4,6 @@ export default function About() {
     <div className="p-10 sm:p-20 bg-secondary flex flex-col-reverse gap-12 lg:flex-row lg:gap-8  lg:p-40">
       {/* image section */}
       <div className="flex flex-col gap-4 items-start sm:flex-row sm:items-center sm:min-w-[500px]">
-        <img
-          src="/assets/family.jpg"
-          alt="family photo"
-          className="w-[191px] h-[180px] object-cover rounded-md "
-        />
         <div className="flex flex-col gap-2 w-full">
           <img
             src="/assets/family.jpg"
@@ -25,22 +20,24 @@ export default function About() {
       {/* text section section */}
       <div className="flex-1 flex flex-col gap-5 ">
         <span className="uppercase tracking-[8px] text-lg text-primary">
-          about us
+          ARISE AND SHINE
         </span>
-        <h1 className="text-2xl font-bold capitalize">Who We Are</h1>
+        <h1 className="text-2xl font-bold capitalize">
+          Two Movements For a Transformed Nation
+        </h1>
         <p className="text-gray-800">
-          ISA60 International is a unique interdenominational, non-profit
-          Christian ministry. We empower individuals through personal
-          transformation, helping them become Men of Honor (MoH) and Women of
-          Dignity (WoD). This transformative approach equips them to lead
-          Christ-centered lives of love, grace, integrity, and respect,
-          impacting their families, workplaces, and communities.
+          The world is in desperate need of people who dare to change it – one
+          heart at a time. People who take responsibility for their lives, their
+          families, their work-places, and their communities. Men and women who
+          are ready to make a real and lasting difference by leading lives of
+          love, grace, integrity, and respect.
           <br />
           <br />
-          Our vision is to see nations transformed by ordinary men and women
-          empowered by God. We partner with local churches and ministries,
-          providing them with the tools and resources to equip their members and
-          fulfill their calling as MoH and WoD.
+          The Church, being a vibrant fellowship of believers active
+          within every sphere of society, has a unique potential to serve as a
+          catalyst for this change. That’s why ISA60 International equips local
+          churches to trigger two movements that can transform any nation: Men
+          of Honor and Women of Dignity.
         </p>
       </div>
     </div>

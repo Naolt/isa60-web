@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   IconBrandFacebook,
   IconBrandYoutube,
@@ -9,7 +10,7 @@ import {
 
 export default function ContactPage() {
   return (
-    <div className="p-10 sm:p-20 flex flex-col gap-12 lg:gap-8  lg:px-32 lg:py-16">
+    <div className="p-10 sm:p-20 flex flex-col gap-12 lg:gap-20  lg:px-32 lg:py-16">
       <div className="flex justify-between flex-wrap gap-32">
         {/* contact information */}
         <div className="flex-1 flex flex-col gap-10">
@@ -29,7 +30,7 @@ export default function ContactPage() {
                 <IconMail size={24} className=" text-gray-900" />
               </span>
               <span className="font-medium text-lg">
-                isa60intethiomin@gmail.com
+                thomasisatpeace@gmail.com | isa60intethiomin@gmail.com
               </span>
             </div>
             <div className="flex gap-4 items-center">
@@ -70,7 +71,17 @@ export default function ContactPage() {
         </div>
 
         {/* contact form */}
-        <div className="flex-1 border-2 border-primary rounded p-8 min-w-[300px] max-w-[500px] flex flex-col gap-10">
+        <div className="flex-1">
+          <img
+            src="/assets/Leadership/tomas.jpg"
+            alt="Director Image"
+            className="flex-1 w-full h-[600px] object-top object-cover rounded-xl"
+          />
+        </div>
+      </div>
+      <div className="w-full flex justify-between  rounded-xl gap-48">
+        {/* contact form */}
+        <div className="flex-1 border-2 border-primary rounded p-8 max-w-[500px] flex flex-col gap-10">
           {/* input text */}
           <div className="flex flex-col gap-4">
             <label htmlFor="full_name" className="font-medium">
@@ -101,19 +112,20 @@ export default function ContactPage() {
               placeholder="Enter your full name"
             />
           </div>
-          <button className="bg-primary text-white p-4 rounded-md">
+          <button className="bg-primary text-black p-4 rounded-md font-medium">
             Send Message
           </button>
         </div>
+        {/* map */}
+        <div className="flex-1 h-auto">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.948404854809!2d38.718320593089764!3d8.97081774798827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b87d728536d7b%3A0xde1f55499d07d56c!2sMina%20Mall%2C%20Jemo%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1713082936924!5m2!1sen!2set"
+            //width="600"
+            loading="lazy"
+            className="flex-1 rounded-xl w-full h-full"
+          ></iframe>
+        </div>
       </div>
-      {/* map */}
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.948404854809!2d38.718320593089764!3d8.97081774798827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b87d728536d7b%3A0xde1f55499d07d56c!2sMina%20Mall%2C%20Jemo%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1713082936924!5m2!1sen!2set"
-        //width="600"
-        height="450"
-        loading="lazy"
-        className="w-full rounded-xl h-96 my-8"
-      ></iframe>
     </div>
   );
 }

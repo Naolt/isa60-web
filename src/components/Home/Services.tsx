@@ -16,7 +16,7 @@ function Services() {
       <div className="flex flex-wrap items-center justify-center">
         <div className="relative">
           <img
-            src="/assets/photocollection/Moria.jpg"
+            src="/assets/others/Moria.jpg"
             alt="Service photo"
             className="w-[295px] h-[438px] object-cover"
           />

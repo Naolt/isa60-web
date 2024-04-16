@@ -33,7 +33,7 @@ function Achievement() {
         <div className="flex-1 max-w-96 min-w-64 p-8 border rounded-md flex flex-col items-center justify-center gap-5   hover:bg-gray-100 transition-all ease-in-out delay-[0.2s]">
           <span className="text-5xl font-semibold text-black">12+</span>
           <p className="text-gray-900 text-center">
-            African Nations Impacted, from bustling cities to rural villages
+            Cities empowered by Christ-Centered training
           </p>
         </div>
       </div>
