@@ -64,7 +64,6 @@ export default function Header() {
         <Link href={"contact"}>
           <Button>Contact</Button>
         </Link>
-        <ModeToggle />
       </div>
     </header>
   );
@@ -77,7 +76,7 @@ function Nav({ label, url }: { label: string; url: string }) {
   return (
     <Link
       href={url}
-      className={`font-medium ${
+      className={`font-medium hover:text-primary transition-colors duration-75 ease-in-out ${
         isActive && "text-primary underline underline-offset-4"
       }`}
     >

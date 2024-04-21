@@ -7,6 +7,7 @@ import {
   IconMail,
   IconPhoneCall,
 } from "@tabler/icons-react";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -30,7 +31,21 @@ export default function ContactPage() {
                 <IconMail size={24} className=" text-gray-900" />
               </span>
               <span className="font-medium text-lg">
-                thomasisatpeace@gmail.com | isa60intethiomin@gmail.com
+                <Link
+                  href="mailto:thomasisatpeace@gmail.com"
+                  className={`text-center sm:text-start font-medium hover:text-primary transition-colors duration-75 ease-in-out
+      }`}
+                >
+                  thomasisatpeace@gmail.com
+                </Link>{" "}
+                |{" "}
+                <Link
+                  href="mailto:isa60intethiomin@gmail.com"
+                  className={`text-center sm:text-start font-medium hover:text-primary transition-colors duration-75 ease-in-out
+      }`}
+                >
+                  isa60intethiomin@gmail.com
+                </Link>
               </span>
             </div>
             <div className="flex gap-4 items-center">

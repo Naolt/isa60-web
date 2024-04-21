@@ -7,6 +7,7 @@ import {
   IconBrandTwitterFilled,
   IconBrandYoutubeFilled,
 } from "@tabler/icons-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -30,9 +31,10 @@ export default function Footer() {
             <p className="font-medium text-xl text-center sm:text-start">
               Links
             </p>
-            <p className="text-center sm:text-start">Home</p>
-            <p className="text-center sm:text-start">About us</p>
-            <p className="text-center sm:text-start">Gallery</p>
+            <Nav label="Home" url="/" />
+            <Nav label="About us" url="/about" />
+            <Nav label="Gallery" url="/gallery" />
+            <Nav label="Contact us" url="/contact" />
           </div>
         </div>
         <div className="flex-1 flex justify-center">
@@ -44,12 +46,17 @@ export default function Footer() {
               {" "}
               +251911746538 / +251912466019
             </p>
-            <p className="text-center sm:text-start">
-              thomasisatpeace@gmail.com
-            </p>
-            <p className="text-center sm:text-start">
-              isa60intethiomin@gmail.com
-            </p>
+
+            <Nav
+              label="thomasisatpeace@gmail.com"
+              url="mailto:thomasisatpeace@gmail.com"
+              noCap
+            />
+            <Nav
+              label="isa60intethiomin@gmail.com"
+              url="mailto:isa60intethiomin@gmail.com"
+              noCap
+            />
           </div>
         </div>
       </div>
@@ -59,5 +66,27 @@ export default function Footer() {
         Reserved.
       </div>
     </div>
+  );
+}
+
+function Nav({
+  label,
+  url,
+  noCap,
+}: {
+  label: string;
+  url: string;
+  noCap?: boolean;
+}) {
+  return (
+    <Link
+      href={url}
+      className={`${
+        noCap ? "" : "capitalize"
+      } text-center sm:text-start font-medium hover:text-primary transition-colors duration-75 ease-in-out
+      }`}
+    >
+      {label}
+    </Link>
   );
 }
