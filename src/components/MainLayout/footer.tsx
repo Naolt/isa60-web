@@ -5,7 +5,9 @@ import {
   IconBrandTelegram,
   IconBrandTiktokFilled,
   IconBrandTwitterFilled,
+  IconBrandYoutube,
   IconBrandYoutubeFilled,
+  IconMail,
 } from "@tabler/icons-react";
 import Link from "next/link";
 
@@ -20,10 +22,18 @@ export default function Footer() {
             office in 2007G.C.
           </p>
           <div className="flex gap-3">
-            <IconBrandFacebookFilled className="text-primary" />
-            <IconBrandYoutubeFilled className="text-primary" />
-            <IconBrandTwitterFilled className="text-primary" />
-            <IconBrandTiktokFilled className="text-primary" />
+            <Link href={"mailto:thomasisatpeace@gmail.com"}>
+              <IconMail className="hover:text-yellow-500 text-primary transition-colors duration-75 ease-in-out" />
+            </Link>
+            <IconBrandFacebook className="text-primary" />
+            <Link
+              href={"https://www.youtube.com/channel/UCamASmjNlJaPFYq5risvkcA"}
+              target="_blank"
+            >
+              <IconBrandYoutube className="hover:text-yellow-500 text-primary transition-colors duration-75 ease-in-out" />
+            </Link>
+            {/*<IconBrandTwitterFilled className="text-primary" />*/}
+            {/*<IconBrandTiktokFilled className="text-primary" />*/}
           </div>
         </div>
         <div className="flex-1 flex justify-center">

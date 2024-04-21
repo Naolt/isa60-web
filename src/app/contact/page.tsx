@@ -73,15 +73,22 @@ export default function ContactPage() {
           </div>
           {/* social links */}
           <div className="flex gap-6">
-            <span className="flex justify-center items-center p-2 border bg-primary rounded-full">
-              <IconMail size={24} className=" text-white" />
-            </span>
+            <Link href={"mailto:thomasisatpeace@gmail.com"}>
+              <span className="flex justify-center items-center p-2 border bg-primary hover:bg-yellow-500 transition-colors duration-75 ease-in-out rounded-full">
+                <IconMail size={24} className=" text-white" />
+              </span>
+            </Link>
             <span className="flex justify-center items-center p-2 border bg-primary rounded-full">
               <IconBrandFacebook size={24} className=" text-white" />
             </span>
-            <span className="flex justify-center items-center p-2 border bg-primary rounded-full">
-              <IconBrandYoutube size={24} className=" text-white" />
-            </span>
+            <Link
+              href={"https://www.youtube.com/channel/UCamASmjNlJaPFYq5risvkcA"}
+              target="_blank"
+            >
+              <span className="flex justify-center items-center p-2 border bg-primary rounded-full  hover:bg-yellow-500 transition-colors duration-75 ease-in-out">
+                <IconBrandYoutube size={24} className=" text-white" />
+              </span>
+            </Link>
           </div>
         </div>
 

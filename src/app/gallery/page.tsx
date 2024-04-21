@@ -61,8 +61,8 @@ export default function PhotoPage() {
             alt="random"
             className="w-full h-full object-cover"
           />
-          <div className="opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black/[0.5] transition-opacity duration-300 ease-in-out ">
-            <p className="text-white">{image.alt}</p>
+          <div className="opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black/[0.5] transition-opacity duration-300 ease-in-out px-3">
+            <p className="text-white text-center">{image.alt}</p>
           </div>
         </div>
       ))}

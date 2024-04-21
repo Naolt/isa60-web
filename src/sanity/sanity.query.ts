@@ -5,9 +5,5 @@ export async function getImages() {
   return client.fetch(groq`*[ _type == "images" ]`);
 }
 export async function getVideos() {
-  return client.fetch(
-    groq`*[_type == "*"]{
-      
-    }`
-  );
+  return client.fetch(groq`*[ _type == "videos" ]`);
 }
