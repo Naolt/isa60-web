@@ -34,7 +34,6 @@ export default function Header() {
           />
         </Link>
         <div className="flex items-center gap-4">
-          <ModeToggle />
           <IconMenu2
             onClick={toggleDropdownMenu}
             className="cursor-pointer hover:text-primary"

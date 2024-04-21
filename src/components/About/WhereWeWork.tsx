@@ -448,7 +448,7 @@ function WhereWeWork() {
         </p>
       </div>
       {/* image section */}
-      <div className="flex-1">
+      <div className="flex-1 hidden md:block">
         <GlobeDemo />
       </div>
     </div>
