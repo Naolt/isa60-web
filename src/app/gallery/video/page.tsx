@@ -1,18 +1,6 @@
 import { IconSearch } from "@tabler/icons-react";
 
-const youtubeUrls = [
-  "https://www.youtube.com/embed/bh1dBME6DjI",
-  "https://www.youtube.com/embed/bh1dBME6DjI",
-  "https://www.youtube.com/embed/bh1dBME6DjI",
-  "https://www.youtube.com/embed/bh1dBME6DjI",
-  "https://www.youtube.com/embed/bh1dBME6DjI",
-  "https://www.youtube.com/embed/bh1dBME6DjI",
-  "https://www.youtube.com/embed/bh1dBME6DjI",
-  "https://www.youtube.com/embed/bh1dBME6DjI",
-  "https://www.youtube.com/embed/bh1dBME6DjI",
-  "https://www.youtube.com/embed/bh1dBME6DjI",
-  "https://www.youtube.com/embed/bh1dBME6DjI",
-];
+const youtubeUrls = ["https://www.youtube.com/embed/bh1dBME6DjI"];
 
 export default function VideoPage() {
   return (

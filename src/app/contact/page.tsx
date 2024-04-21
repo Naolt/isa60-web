@@ -131,7 +131,7 @@ export default function ContactPage() {
           </button>
         </div>*/}
         {/* map */}
-        <div className="flex-1 h-auto">
+        <div className="flex-1 h-80">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.948404854809!2d38.718320593089764!3d8.97081774798827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b87d728536d7b%3A0xde1f55499d07d56c!2sMina%20Mall%2C%20Jemo%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1713082936924!5m2!1sen!2set"
             //width="600"
