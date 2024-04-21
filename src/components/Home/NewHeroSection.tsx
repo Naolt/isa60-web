@@ -9,7 +9,7 @@ export default function NewHero() {
     <div className="flex flex-col relative overflow-hidden">
       <div className="w-full">
         <img
-          src="/assets/family.jpg"
+          src="/assets/family.webp"
           alt="family photo"
           className="object-contain object-top mx-auto "
         />

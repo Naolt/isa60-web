@@ -5,22 +5,22 @@ export default function OurHistory() {
       {/* image section */}
       <div className="flex-1 grid grid-cols-2 gap-6">
         <img
-          src="/assets/History/welcome1.jpg"
+          src="/assets/History/welcome1.webp"
           alt="Welcome Photo"
           className="object-cover rounded-md h-full "
         />
         <img
-          src="/assets/History/planting.jpg"
+          src="/assets/History/planting.webp"
           alt="family photo"
           className="object-cover rounded-md h-full  "
         />
         <img
-          src="/assets/History/launching.jpg"
+          src="/assets/History/launching.webp"
           alt="family photo"
           className="object-cover rounded-md h-full "
         />
         <img
-          src="/assets/History/welcome3.jpg"
+          src="/assets/History/welcome3.webp"
           alt="family photo"
           className="object-cover rounded-md h-full "
         />

@@ -31,7 +31,7 @@ function OurTeam() {
               <Member
                 name="Enat Esatu"
                 role="National Director Assistant"
-                img="/assets/LeaderShip/enat.jpg"
+                img="/assets/LeaderShip/enat.webp"
               />
             </div>
           </div>
