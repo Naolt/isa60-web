@@ -22,11 +22,14 @@ type Image = {
 
 export default function PhotoPage() {
   const [images, setImages] = useState<Image[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
+    setIsLoading(true);
     getImages()
       .then((res: Document[]) => {
         console.log(res);
         setImages(res[0].images);
+        setIsLoading(false);
       })
       .catch((err: any) => {
         console.log("error", err);
@@ -38,6 +41,16 @@ export default function PhotoPage() {
   return (
     // image masonry layout
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {isLoading &&
+        new Array(8).fill(0).map((_, index: number) => {
+          return (
+            <div
+              key={index}
+              className="h-64 flex-1 bg-gray-400 animate-pulse"
+            ></div>
+          );
+        })}
+
       {images.map((image: Image, index: number) => (
         <div
           key={index}

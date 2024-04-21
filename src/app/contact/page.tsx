@@ -96,8 +96,7 @@ export default function ContactPage() {
       </div>
       <div className="w-full flex justify-between  rounded-xl gap-48">
         {/* contact form */}
-        <div className="flex-1 border-2 border-primary rounded p-8 max-w-[500px] flex flex-col gap-10">
-          {/* input text */}
+        {/*<div className="flex-1 border-2 border-primary rounded p-8 max-w-[500px] flex flex-col gap-10">
           <div className="flex flex-col gap-4">
             <label htmlFor="full_name" className="font-medium">
               Full Name
@@ -130,7 +129,7 @@ export default function ContactPage() {
           <button className="bg-primary text-black p-4 rounded-md font-medium">
             Send Message
           </button>
-        </div>
+        </div>*/}
         {/* map */}
         <div className="flex-1 h-auto">
           <iframe
