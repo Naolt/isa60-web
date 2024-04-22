@@ -10,6 +10,7 @@ import {
   IconMail,
   IconPhoneCall,
 } from "@tabler/icons-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -143,11 +144,12 @@ export default function ContactPage() {
         </div>
 
         {/* contact form */}
-        <div className="flex-1">
-          <img
-            src="/assets/Leadership/tomas.jpg"
+        <div className="flex-1 relative h-[600px]">
+          <Image
+            src="/assets/LeaderShip/tomas.jpg"
             alt="Director Image"
-            className="flex-1 w-full h-[600px] object-top object-cover rounded-xl"
+            fill
+            className="flex-1 w-full  object-top object-cover rounded-xl"
           />
         </div>
       </div>
