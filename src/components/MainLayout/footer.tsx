@@ -1,39 +1,56 @@
-import {
-  IconBrandFacebook,
-  IconBrandFacebookFilled,
-  IconBrandLinkedin,
-  IconBrandTelegram,
-  IconBrandTiktokFilled,
-  IconBrandTwitterFilled,
-  IconBrandYoutube,
-  IconBrandYoutubeFilled,
-  IconMail,
-} from "@tabler/icons-react";
+"use client";
+import { Profile, SocialLink } from "@/app/contact/page";
+import { iconsFooter } from "@/constants";
+import { getProfile } from "@/sanity/sanity.query";
+import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
+  const [profile, setProfile] = useState<Profile>();
+  const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    setIsLoading(true);
+    getProfile()
+      .then((res: Profile[]) => {
+        console.log(res);
+        setProfile(res[0]);
+        setIsLoading(false);
+      })
+      .catch((err: any) => {
+        console.log("error", err);
+      });
+  }, []);
   return (
     <div>
       <div className="p-20 w-full flex flex-wrap gap-8 flex-col sm:flex-row sm:gap-8">
         <div className="flex-1 flex flex-col gap-2 items-center sm:items-start">
-          <img src="/assets/logo.jpg" alt="Logo" className="w-52 h-16" />
+          <div className="relative w-52 h-16">
+            <Image
+              src="/assets/logo.jpg"
+              alt="Logo"
+              fill
+              className="object-cover"
+            />
+          </div>
           <p className="text-center sm:text-start">
             is a non-profit organization licensed by the Ethiopian Council
             office in 2007G.C.
           </p>
           <div className="flex gap-3">
-            <Link href={"mailto:thomasisatpeace@gmail.com"}>
-              <IconMail className="hover:text-yellow-500 text-primary transition-colors duration-75 ease-in-out" />
-            </Link>
-            <IconBrandFacebook className="text-primary" />
-            <Link
-              href={"https://www.youtube.com/channel/UCamASmjNlJaPFYq5risvkcA"}
-              target="_blank"
-            >
-              <IconBrandYoutube className="hover:text-yellow-500 text-primary transition-colors duration-75 ease-in-out" />
-            </Link>
-            {/*<IconBrandTwitterFilled className="text-primary" />*/}
-            {/*<IconBrandTiktokFilled className="text-primary" />*/}
+            {profile?.social.map((social: SocialLink, index: number) => {
+              return (
+                <Link key={index} href={social.url} target="_blank">
+                  {iconsFooter[social.platform.toLowerCase()]}
+                </Link>
+              );
+            })}
+
+            {profile && profile.email.length > 0 && (
+              <Link href={`mailto:${profile.email[0]}`}>
+                {iconsFooter.email}
+              </Link>
+            )}
           </div>
         </div>
         <div className="flex-1 flex justify-center">
@@ -54,19 +71,17 @@ export default function Footer() {
             </p>
             <p className="text-center sm:text-start">
               {" "}
-              +251911746538 / +251912466019
+              {profile?.phone.map((phone, index) => (
+                <>
+                  {phone}
+                  {index !== profile.phone.length - 1 && " | "}
+                </>
+              ))}
             </p>
 
-            <Nav
-              label="thomasisatpeace@gmail.com"
-              url="mailto:thomasisatpeace@gmail.com"
-              noCap
-            />
-            <Nav
-              label="isa60intethiomin@gmail.com"
-              url="mailto:isa60intethiomin@gmail.com"
-              noCap
-            />
+            {profile?.email.map((email, index) => (
+              <Nav key={index} label={email} url={`mailto:${email}`} noCap />
+            ))}
           </div>
         </div>
       </div>

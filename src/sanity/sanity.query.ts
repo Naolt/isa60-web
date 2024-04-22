@@ -7,3 +7,7 @@ export async function getImages() {
 export async function getVideos() {
   return client.fetch(groq`*[ _type == "videos" ]`);
 }
+
+export async function getProfile() {
+  return client.fetch(groq`*[ _type == "profile" ]`);
+}

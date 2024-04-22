@@ -15,8 +15,10 @@ export default function Member({
         alt="Team member photo"
         className="w-64 h-64 rounded-full object-cover object-top"
       />
-      <p className="text-xl text-gray-700 font-semibold mt-2">{name}</p>
-      <p>{role}</p>
+      <p className="text-xl text-gray-700 font-semibold mt-2 text-center">
+        {name}
+      </p>
+      <p className="text-center">{role}</p>
     </div>
   );
 }

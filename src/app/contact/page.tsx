@@ -1,4 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
+import { icons } from "@/constants";
+import { getProfile } from "@/sanity/sanity.query";
 import {
   IconBrandFacebook,
   IconBrandYoutube,
@@ -8,8 +11,51 @@ import {
   IconPhoneCall,
 } from "@tabler/icons-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
+export type Profile = {
+  address: string;
+  email: string[];
+  mapLink: string;
+  phone: string[];
+  social: SocialLink[]; // Assuming a separate type for SocialLink
+  workingHour: string;
+  _createdAt: string;
+  _id: string;
+  _rev: string;
+  _type: "profile";
+  _updatedAt: string;
+};
+
+export type SocialLink = {
+  platform: string;
+  url: string;
+};
 
 export default function ContactPage() {
+  const [profile, setProfile] = useState<Profile>();
+  const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    setIsLoading(true);
+    getProfile()
+      .then((res: Profile[]) => {
+        console.log(res);
+        setProfile(res[0]);
+        setIsLoading(false);
+      })
+      .catch((err: any) => {
+        console.log("error", err);
+      });
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <p className="text-2xl font-medium text-gray-700">Loading...</p>
+      </div>
+    );
+  }
+
   return (
     <div className="p-10 sm:p-20 flex flex-col gap-12 lg:gap-20  lg:px-32 lg:py-16">
       <div className="flex justify-between flex-wrap gap-32">
@@ -31,21 +77,19 @@ export default function ContactPage() {
                 <IconMail size={24} className=" text-gray-900" />
               </span>
               <span className="font-medium text-lg">
-                <Link
-                  href="mailto:thomasisatpeace@gmail.com"
-                  className={`text-center sm:text-start font-medium hover:text-primary transition-colors duration-75 ease-in-out
+                {profile?.email.map((email, index) => (
+                  <>
+                    <Link
+                      key={index}
+                      href={`mailto:${email}`}
+                      className={`text-center sm:text-start font-medium hover:text-primary transition-colors duration-75 ease-in-out
       }`}
-                >
-                  thomasisatpeace@gmail.com
-                </Link>{" "}
-                |{" "}
-                <Link
-                  href="mailto:isa60intethiomin@gmail.com"
-                  className={`text-center sm:text-start font-medium hover:text-primary transition-colors duration-75 ease-in-out
-      }`}
-                >
-                  isa60intethiomin@gmail.com
-                </Link>
+                    >
+                      {email}
+                    </Link>
+                    {index !== profile.email.length - 1 && " | "}
+                  </>
+                ))}
               </span>
             </div>
             <div className="flex gap-4 items-center">
@@ -53,42 +97,48 @@ export default function ContactPage() {
                 <IconPhoneCall size={24} className=" text-gray-900" />
               </span>
               <span className="font-medium text-lg">
-                +251911746538 / +251912466019
+                {profile?.phone.map((phone, index) => (
+                  <>
+                    {phone}
+                    {index !== profile.phone.length - 1 && " | "}
+                  </>
+                ))}
               </span>
             </div>
             <div className="flex gap-4 items-center">
               <span className="flex justify-center items-center p-2 border border-gray-900 rounded-xl">
                 <IconLocation size={24} className=" text-gray-900" />
               </span>
-              <span className="font-medium text-lg">
-                Jemo Mikael, Mina Mall building 5th floor
-              </span>
+              <span className="font-medium text-lg">{profile?.address}</span>
             </div>
             <div className="flex gap-4 items-center">
               <span className="flex justify-center items-center p-2 border border-gray-900 rounded-xl">
                 <IconClock size={24} className=" text-gray-900" />
               </span>
-              <span className="font-medium text-lg">08:00 - 17:00</span>
+              <span className="font-medium text-lg">
+                {profile?.workingHour}
+              </span>
             </div>
           </div>
           {/* social links */}
           <div className="flex gap-6">
-            <Link href={"mailto:thomasisatpeace@gmail.com"}>
-              <span className="flex justify-center items-center p-2 border bg-primary hover:bg-yellow-500 transition-colors duration-75 ease-in-out rounded-full">
-                <IconMail size={24} className=" text-white" />
-              </span>
-            </Link>
-            <span className="flex justify-center items-center p-2 border bg-primary rounded-full">
-              <IconBrandFacebook size={24} className=" text-white" />
-            </span>
-            <Link
-              href={"https://www.youtube.com/channel/UCamASmjNlJaPFYq5risvkcA"}
-              target="_blank"
-            >
-              <span className="flex justify-center items-center p-2 border bg-primary rounded-full  hover:bg-yellow-500 transition-colors duration-75 ease-in-out">
-                <IconBrandYoutube size={24} className=" text-white" />
-              </span>
-            </Link>
+            {/* socials*/}
+            {profile?.social.map((social: SocialLink, index: number) => (
+              <Link key={index} href={social.url} target="_blank">
+                <span className="flex justify-center items-center p-2 border bg-primary rounded-full hover:bg-yellow-500 transition-colors duration-75 ease-in-out">
+                  {icons[social.platform.toLowerCase()]}
+                </span>
+              </Link>
+            ))}
+
+            {/* if there is an email */}
+            {profile && profile?.email?.length > 0 && (
+              <Link href={`mailto:${profile.email[0]}`}>
+                <span className="flex justify-center items-center p-2 border bg-primary rounded-full hover:bg-yellow-500 transition-colors duration-75 ease-in-out">
+                  <IconMail size={24} className=" text-white" />
+                </span>
+              </Link>
+            )}
           </div>
         </div>
 
