@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className="w-full h-[750px] relative overflow-hidden">
       <img
-        src="/assets/family.jpg"
+        src="/assets/family.webp"
         alt="family photo"
         className="w-full h-full object-cover object-top"
       />
