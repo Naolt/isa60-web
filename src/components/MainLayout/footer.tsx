@@ -22,12 +22,12 @@ export default function Footer() {
       });
   }, []);
   return (
-    <div>
+    <div className="bg-gray-200">
       <div className="p-20 w-full flex flex-wrap gap-8 flex-col sm:flex-row sm:gap-8">
         <div className="flex-1 flex flex-col gap-2 items-center sm:items-start">
           <div className="relative w-52 h-16">
             <Image
-              src="/assets/logo.jpg"
+              src="/assets/logo.png"
               alt="Logo"
               fill
               className="object-cover"
@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
       </div>
       <hr />
-      <div className="flex justify-center py-8">
+      <div className="flex justify-center py-8 text-center">
         Copyright @ ISA60 International Ethiopian Ministry 2024. All Rights
         Reserved.
       </div>
