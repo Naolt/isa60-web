@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function Impact() {
@@ -19,8 +20,14 @@ function Impact() {
         </p>
       </div>
       {/* image section */}
-      <div className="">
-        <img src="/assets/Country.svg" alt="Country photo" />
+      <div className="flex-1 flex justify-center items-center">
+        <Image
+          src="/assets/Country.svg"
+          alt="Country photo"
+          objectFit="cover"
+          width={500}
+          height={500}
+        />
       </div>
     </div>
   );
