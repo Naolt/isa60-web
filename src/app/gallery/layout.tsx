@@ -17,7 +17,7 @@ export default function GalleryLayout({
         <span className="uppercase tracking-[8px] text-lg text-primary">
           Gallery
         </span>
-        <h1 className="text-4xl font-bold capitalize">
+        <h1 className="text-4xl font-bold capitalize text-center">
           Our Story in Photos & Videos
         </h1>
       </div>

@@ -20,11 +20,11 @@ function OurTeam() {
             <div className="flex flex-wrap gap-24 justify-center">
               <Member
                 name="Pastor Dr. Andreas Andersson"
-                role="President"
+                role="International President"
                 img="/assets/LeaderShip/andreas.jpg"
               />
               <Member
-                name="Dr. Thomas Melesse (Ph.D)"
+                name="Dr. Thomas Melesse"
                 role="National Director"
                 img="/assets/LeaderShip/tomas.jpg"
               />
@@ -49,7 +49,7 @@ function OurTeam() {
               />
               <Member
                 name="Jessica Hedman"
-                role="Board Member And CEO of Elnet"
+                role="Board Member And CEO of Elnet Foundation"
                 img="/assets/LeaderShip/jessica.jpg"
               />
               <Member
