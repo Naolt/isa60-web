@@ -42,7 +42,7 @@ export default function RootLayout({
       <body
         className={
           poppins.className +
-          " flex flex-col min-h-screen  max-w-[1920px] mx-auto"
+          " flex flex-col min-h-screen  max-w-[1920px] mx-auto relative"
         }
       >
         <ThemeProvider
@@ -52,7 +52,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NextTopLoader showSpinner={false} />
-          <Header />
+          <div className="h-[88px]">
+            <Header />
+          </div>
           <div className="min-h-screen max-w-screen overflow-x-hidden">
             {children}
           </div>

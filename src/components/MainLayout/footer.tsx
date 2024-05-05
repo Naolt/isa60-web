@@ -60,6 +60,7 @@ export default function Footer() {
             </p>
             <Nav label="Home" url="/" />
             <Nav label="About us" url="/about" />
+            <Nav label="Our program" url="/program" />
             <Nav label="Gallery" url="/gallery" />
             <Nav label="Contact us" url="/contact" />
           </div>

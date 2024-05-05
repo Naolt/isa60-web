@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 function Services() {
   return (
@@ -14,11 +16,12 @@ function Services() {
       </div>
       {/* image section */}
       <div className="flex flex-wrap items-center justify-center">
-        <div className="relative">
-          <img
+        <div className="relative w-[295px] h-[438px]">
+          <Image
             src="/assets/others/Moria.jpg"
             alt="Service photo"
-            className="w-[295px] h-[438px] object-cover"
+            fill
+            className="object-cover"
           />
           <div className="absolute top-0 left-0 w-full h-full z-10 bg-black/[0.6] px-8 py-16 flex flex-col gap-10">
             <span className="text-2xl font-bold capitalize text-white">
@@ -26,8 +29,13 @@ function Services() {
               What We Do
             </span>
             <p className="text-gray-50">
-              Our training equips you to become a Man/Woman of Honor.
+              Our training equips you to become a Man of Honor/Woman of Dignity
             </p>
+            <Link href={"/program"}>
+              <button className="border border-white text-white px-8 py-4 w-fit hover:bg-black/[0.5] transition-all ease-in-out duration-150 ">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
         <div className="w-[295px] h-[438px] flex flex-col p-8 items-center gap-10 bg-gray-100">

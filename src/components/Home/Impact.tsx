@@ -14,9 +14,9 @@ function Impact() {
         </h1>
         <p className="text-gray-800">
           Since its inception, ISA60 has empowered over 2,500 ordinary men and
-          women to become Men of Honor (MoH) and Women of Dignity (WoD). These
-          individuals are leading positive change within their families,
-          workplaces, and communities.
+          women in Ethiopia to become Men of Honor (MoH) and Women of Dignity
+          (WoD). These individuals are leading positive change within their
+          families, workplaces, and communities.
         </p>
       </div>
       {/* image section */}

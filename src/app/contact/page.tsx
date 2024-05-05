@@ -66,11 +66,12 @@ export default function ContactPage() {
             Contact us
           </h1>
           <p className="text-gray-700">
-            Get in Touch! Do you have a question, want to volunteer, or have a
-            project that aligns with our mission? Reach out and let&apos;s start
-            a conversation.
+            {` Welcome! Thomas Melesse from ISA60 International Ethiopia Ministry
+            is here to help. Get in Touch! Do you have a question, want to
+            volunteer, or have a project that aligns with our mission? Reach out
+            and let's start a conversation.`}
           </p>
-          <h2 className="font-medium text-2xl">About information</h2>
+          <h2 className="font-medium text-2xl">Contact information</h2>
           {/* about information */}
           <div className="flex flex-col gap-6">
             <div className="flex gap-4 items-center">
