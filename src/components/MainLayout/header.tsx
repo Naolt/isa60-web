@@ -1,22 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { IconMenu, IconMenu2, IconMenuDeep } from "@tabler/icons-react";
+import { IconMenu2 } from "@tabler/icons-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ModeToggle } from "../ThemeToggle";
 import { Button } from "../ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 export default function Header() {
   const [isDropdownMenuOpen, setIsDropdownMenuOpen] = useState(false);
@@ -103,13 +92,7 @@ export default function Header() {
       )}
       <div className="hidden lg:flex gap-2 items-center ">
         <Link href={"get_involved"}>
-          <HoverBorderGradient
-            containerClassName="w-fit p-0"
-            as="button"
-            className="bg-primary text-black w-fit p-0"
-          >
-            <Button>Get Involved</Button>
-          </HoverBorderGradient>
+          <Button>Get Involved</Button>
         </Link>
       </div>
     </header>
