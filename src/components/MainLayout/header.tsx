@@ -85,13 +85,13 @@ export default function Header() {
           <Nav label="Our program" url="/program" />
           <Nav label="Gallery" url="/gallery" />
           <Nav label="Contact us" url="/contact" />
-          <Link href={"get_involved"}>
+          <Link href={"/get_involved"}>
             <Button>Get Involved</Button>
           </Link>
         </div>
       )}
       <div className="hidden lg:flex gap-2 items-center ">
-        <Link href={"get_involved"}>
+        <Link href={"/get_involved"}>
           <Button>Get Involved</Button>
         </Link>
       </div>

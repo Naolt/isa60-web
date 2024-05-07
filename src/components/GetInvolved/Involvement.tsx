@@ -23,7 +23,7 @@ function Involvement() {
           and your experience, please send us an email to:{" "}
           <Link
             href={"mailto:thomas.melesse@isa60minethio.com"}
-            className="underline"
+            className="underline text-sm"
           >
             thomas.melesse@isa60minethio.com
           </Link>{" "}
@@ -40,26 +40,26 @@ function Involvement() {
           </p>
           <ul className="flex-1">
             <li>Donate Securely Through:</li>
-            <li className="flex gap-2 items-center">
-              <span className="w-2 h-2 bg-black rounded-full"></span>
-              <p>
+            <li className="flex gap-2 items-baseline">
+              <span className="w-2 min-w-2 min-h-2 h-2 bg-black rounded-full"></span>
+              <p className="">
                 <b>Account Name:</b> ISA 60 International Ethiopia Ministry
               </p>
             </li>
-            <li className="flex gap-2 items-center">
-              <span className="w-2 h-2 bg-black rounded-full"></span>
+            <li className="flex gap-2 items-baseline">
+              <span className="w-2 min-w-2 min-h-2 h-2 bg-black rounded-full"></span>
               <p>
                 <b>Account Number:</b> 1000422989777
               </p>
             </li>
-            <li className="flex gap-2 items-center">
-              <span className="w-2 h-2 bg-black rounded-full"></span>
+            <li className="flex gap-2 items-baseline">
+              <span className="w-2 min-w-2 min-h-2 h-2 bg-black rounded-full"></span>
               <p>
                 <b>Address:</b> Jemo Mikael, Mina Mall building 5th floor
               </p>
             </li>
-            <li className="flex gap-2 items-center">
-              <span className="w-2 h-2 bg-black rounded-full"></span>
+            <li className="flex gap-2 items-baseline">
+              <span className="w-2 min-w-2 min-h-2 h-2 bg-black rounded-full"></span>
               <p>
                 <b>Phone:</b> 0911746538/0912466019
               </p>

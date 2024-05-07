@@ -17,7 +17,7 @@ export default function Hero() {
           <h1 className="text-white text-4xl md:text-6xl max-w-[721px] text-center font-bold capitalize">
             Get Involved
           </h1>
-          <p className="text-white text-xl text-center line-clamp-3">
+          <p className="text-white text-xl text-center text-balance">
             We need your support to fulfill our mission.
             <br /> There is a number of ways in which you can
             <br />

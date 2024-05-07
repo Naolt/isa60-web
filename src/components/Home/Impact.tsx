@@ -10,7 +10,7 @@ function Impact() {
           Our Impact
         </span>
         <h1 className="text-3xl font-bold capitalize text-white">
-          Transforming Lives Across Africa
+          Transforming Lives Across Ethiopia
         </h1>
         <p className="text-gray-800">
           Since its inception, ISA60 has empowered over 2,500 ordinary men and

@@ -66,7 +66,7 @@ export default function ContactPage() {
             Contact us
           </h1>
           <p className="text-gray-700">
-            {` Welcome! Thomas Melesse from ISA60 International Ethiopia Ministry
+            {` Welcome! Dr. Thomas Melesse from ISA60 International Ethiopia Ministry
             is here to help. Get in Touch! Do you have a question, want to
             volunteer, or have a project that aligns with our mission? Reach out
             and let's start a conversation.`}

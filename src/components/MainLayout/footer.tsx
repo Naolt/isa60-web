@@ -23,7 +23,7 @@ export default function Footer() {
   }, []);
   return (
     <div className="bg-gray-200">
-      <div className="p-20 w-full flex flex-wrap gap-8 flex-col sm:flex-row sm:gap-8">
+      <div className="px-4 py-20 sm:px-20 w-full flex flex-wrap gap-8 flex-col sm:flex-row sm:gap-8">
         <div className="flex-1 flex flex-col gap-2 items-center sm:items-start">
           <div className="relative w-52 h-16">
             <Image
@@ -63,6 +63,7 @@ export default function Footer() {
             <Nav label="Our program" url="/program" />
             <Nav label="Gallery" url="/gallery" />
             <Nav label="Contact us" url="/contact" />
+            <Nav label="Get involved" url="/get_involved" />
           </div>
         </div>
         <div className="flex-1 flex justify-center">
@@ -87,9 +88,19 @@ export default function Footer() {
         </div>
       </div>
       <hr />
-      <div className="flex justify-center py-8 text-center">
-        Copyright @ ISA60 International Ethiopian Ministry 2024. All Rights
-        Reserved.
+      <div className="flex flex-col lg:flex-row justify-center py-8 text-center">
+        <p>
+          Copyright @ ISA60 International Ethiopian Ministry 2024. All Rights
+          Reserved. &nbsp;|
+        </p>
+
+        <Link
+          href={"https://naolt.vercel.app"}
+          className="underline-offset-2  hover:text-yellow-500 hover:font-medium"
+          target="_blank"
+        >
+          &nbsp; Developed by Naol Tamrat
+        </Link>
       </div>
     </div>
   );
