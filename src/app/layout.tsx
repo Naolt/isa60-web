@@ -5,6 +5,7 @@ import Header from "@/components/MainLayout/header";
 import Footer from "@/components/MainLayout/footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import NextTopLoader from "nextjs-toploader";
+import BackToTop from "@/components/BackToTop";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -51,6 +52,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <BackToTop />
           <NextTopLoader showSpinner={false} />
           <div className="h-[88px]">
             <Header />
@@ -58,6 +60,7 @@ export default function RootLayout({
           <div className="min-h-screen max-w-screen overflow-x-hidden">
             {children}
           </div>
+
           <Footer />
         </ThemeProvider>
         <div id="modal-root"></div>
