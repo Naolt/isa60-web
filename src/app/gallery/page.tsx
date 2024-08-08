@@ -32,8 +32,13 @@ export default function PhotoPage() {
     setIsLoading(true);
     getImages()
       .then((res: Document[]) => {
+        const allImages: any = [];
+        res.forEach((doc) => {
+          allImages.push(doc.images);
+        });
+
         console.log(res);
-        setImages(res[0].images);
+        setImages(allImages.flat());
         setIsLoading(false);
       })
       .catch((err: any) => {
@@ -101,6 +106,7 @@ function ImageCard({ image }: { image: Image }) {
         alt="random"
         layout="fill"
         objectFit="cover"
+        loading="lazy"
       />
       <div className="opacity-0 hover:opacity-100 absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black/[0.5] transition-opacity duration-300 ease-in-out px-3">
         <p className="text-white text-center">{image.alt}</p>
