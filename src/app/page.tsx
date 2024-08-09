@@ -13,7 +13,7 @@ import Partners from "@/components/Home/partners";
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <NewHero />
       <NewAbout />
       <Mission />
       <Impact />
