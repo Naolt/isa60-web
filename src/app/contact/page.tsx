@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { icons } from "@/constants";
-import { deleteDocument, getProfile } from "@/sanity/sanity.query";
+import { getProfile } from "@/sanity/sanity.query";
 import {
   IconBrandFacebook,
   IconBrandYoutube,
