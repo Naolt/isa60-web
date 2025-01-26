@@ -13,7 +13,6 @@ export default function Footer() {
     setIsLoading(true);
     getProfile()
       .then((res: Profile[]) => {
-        console.log(res);
         setProfile(res[0]);
         setIsLoading(false);
       })

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { icons } from "@/constants";
-import { getProfile } from "@/sanity/sanity.query";
+import { deleteDocument, getProfile } from "@/sanity/sanity.query";
 import {
   IconBrandFacebook,
   IconBrandYoutube,
@@ -38,9 +38,9 @@ export default function ContactPage() {
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     setIsLoading(true);
+
     getProfile()
       .then((res: Profile[]) => {
-        console.log(res);
         setProfile(res[0]);
         setIsLoading(false);
       })

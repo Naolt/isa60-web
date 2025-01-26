@@ -29,9 +29,9 @@ function OurTeam() {
                 img="/assets/LeaderShip/tomas.jpg"
               />
               <Member
-                name="Enat Esatu"
+                name="Science kassaye Degefu"
                 role="National Director Assistant"
-                img="/assets/LeaderShip/enat.webp"
+                img="/assets/LeaderShip/Science kassaye Degefu.jpg"
               />
             </div>
           </div>

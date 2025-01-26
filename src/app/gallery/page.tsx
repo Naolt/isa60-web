@@ -37,7 +37,6 @@ export default function PhotoPage() {
           allImages.push(doc.images);
         });
 
-        console.log(res);
         setImages(allImages.flat());
         setIsLoading(false);
       })

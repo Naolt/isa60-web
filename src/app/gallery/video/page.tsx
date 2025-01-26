@@ -20,7 +20,6 @@ export default function VideoPage() {
     setIsLoading(true);
     getVideos()
       .then((res: Document[]) => {
-        console.log(res);
         setVideos(res[0].videos);
         setIsLoading(false);
       })
@@ -29,7 +28,6 @@ export default function VideoPage() {
       });
   }, []);
 
-  console.log("Videos", videos);
   return (
     // image masonry layout
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
